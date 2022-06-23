@@ -1,0 +1,50 @@
+import random
+name = ""
+question = "Will Taylor Swift release an album today?"
+answer = ""
+
+random_number = random.randint(1,16)
+if random_number ==  1:
+  answer = "I foresee something good, and right, and real."
+elif random_number == 2:
+  answer = "That's never going to happen... LIKE EVER."
+elif random_number == 3:
+  answer = "Yes... I can see it now."
+elif random_number == 4:
+  answer = "Maybe... even if it's just in your wildest dreams."
+elif random_number == 5:
+  answer = "Who's Taylor Swift anyway?"
+elif random_number == 6:
+  answer = "The rumors are terrible and cruel, but most of them are true."
+elif random_number == 7:
+  answer = "My sources say yes... but they should've said no!"
+elif random_number == 8:
+  answer = "The answer you seek is not so black and white... it's golden."
+elif random_number == 9:
+  answer = "Why the hurry? You need to calm down!"
+elif random_number == 10:
+  answer = "I see magic. Madness? Heaven! SIN!!"
+elif random_number == 11:
+  answer = "It depends... are you ready for it?"
+elif random_number == 12:
+  answer = "DROP EVERYTHING NOW..."
+elif random_number == 13:
+  answer = "Let it fade into the grey of your day old tea. It could never be."
+elif random_number == 14:
+  answer = "I thought I knew for a minute, but now I'm not so sure."
+elif random_number == 15:
+  answer = “I want to tell you not to get lost in these petty things.”
+elif random_number == 16:
+  answer = “Not yet. Go back to living for the hope of it all.”
+else:
+  answer = "Error! This is a blank space."
+
+if name == "" and question == "":
+  print("I never learned to read your mind. Tell me your name and your question.")
+elif name == "":
+  print("I've got a blank space! Write your name.")
+elif question == "":
+  print("I <3 ? too, but I can't read the back of your hand! Write your question in the blank.")
+else:
+  print(name + " asks: " + question)
+  print("Magic Mirrorball's answer: " + answer)
